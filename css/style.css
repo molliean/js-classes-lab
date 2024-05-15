@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 10vh;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "form section";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    min-height: 10vh;
+    margin-bottom: 10px;
+    grid-area: header;
+    color:beige;
+    font-size: 40px;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
